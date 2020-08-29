@@ -20,6 +20,8 @@ const fetchAndDisplay = async (event) => {
 fetchAndDisplay();
 
 function dispayMovies(movies) {
+    // Objects = Objects.sort((a, b) => b.rt_score - a.rt_score);
+    movies = movies.sort((a, b) => b.rt_score - a.rt_score);
     const html = movies.map(movie => {
         return `
         <div class="big_container">
