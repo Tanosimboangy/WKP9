@@ -12,13 +12,13 @@ async function fetchInformation() {
     return data;
 }
 
-
 const fetchAndDisplay = async (event) => {
     const movies = await fetchInformation();
     dispayMovies(movies)
 }
 fetchAndDisplay();
 
+// Display the data in the lists
 function dispayMovies(movies) {
     // Objects = Objects.sort((a, b) => b.rt_score - a.rt_score);
     movies = movies.sort((a, b) => b.rt_score - a.rt_score);
@@ -40,6 +40,7 @@ function dispayMovies(movies) {
                         <li><p><b>PRODUCER: </b>${movie.producer}</p></li>
                     </ul>
                 </li>
+                <li><button class="delete">DELETE<button></li>
             </ul>
         </div>
         `;
