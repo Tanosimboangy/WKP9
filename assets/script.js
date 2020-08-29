@@ -14,12 +14,12 @@ async function fetchInformation() {
 
 const fetchAndDisplay = async (event) => {
     const movies = await fetchInformation();
-    dispayMovies(movies)
+    displayMovies(movies)
 }
 fetchAndDisplay();
 
 // Display the data in the lists
-function dispayMovies(movies) {
+function displayMovies(movies) {
     // Objects = Objects.sort((a, b) => b.rt_score - a.rt_score);
     movies = movies.sort((a, b) => b.rt_score - a.rt_score);
     const html = movies.map(movie => {
