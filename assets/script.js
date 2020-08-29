@@ -11,7 +11,7 @@ async function fetchInformation() {
     const data = await response.json();
     return data;
 }
-fetchInformation();
+
 
 const fetchAndDisplay = async (event) => {
     const movies = await fetchInformation();
@@ -28,21 +28,22 @@ function dispayMovies(movies) {
             <ul class="wrapper_list">
                 <li>
                     <ul class="items">
-                        <li><h2><b>Movie title: </b>${movie.title}</h2></li>
-                        <li><p><b>Release_date: </b>${movie.release_date}</p></li>
-                        <li><p><b>rt_score: </b>${movie.rt_score}</p></li>
+                        <li><h2><b>MOVIE TITLE: </b>${movie.title}</h2></li>
+                        <li><p><b>RELEASED_DATE: </b>${movie.release_date}</p></li>
+                        <li><p><b>RT_SCORE: </b>${movie.rt_score}</p></li>
                     </ul>
                 </li>
-                <li><p class="style"><b>Description: </b>${movie.description}</p></li>
+                <li><p class="style"><b>DESCRIPTION: </b>${movie.description}</p></li>
                 <li>
                     <ul class="last_items">
-                        <li><p><b>Director: </b>${movie.director}</p></li>
-                        <li><p><b>Producer: </b>${movie.producer}</p></li>
+                        <li><p><b>DIRECTOR: </b>${movie.director}</p></li>
+                        <li><p><b>PRODUCER: </b>${movie.producer}</p></li>
                     </ul>
                 </li>
             </ul>
         </div>
         `;
     });
+    // Inserting the html elements inside of the big html
     container.innerHTML = html.join('');
 }
