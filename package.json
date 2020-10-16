@@ -1,0 +1,26 @@
+{
+  "name": "wkp9",
+  "version": "1.0.0",
+  "description": "## In a few sentences, explain the structure of your project. - After creating the necessary elements in html, I styled my html to get it more readable, understandable and beautiful. - In `script.js` : First of all, I initialized the link to the server, in order to access the path to the server. Later on, I created a function with `async await` to handle the accessibility the data from the server and turn it into object. - I created a displayMovies function to create an html and store the data from the server into that html and show it into the list. After that I activated the displayMovies function by matching it to the information I fetched from the server. - I append the html into the big one, in order to show it to my list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanosimboangy/WKP9.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanosimboangy/WKP9/issues"
+  },
+  "homepage": "https://github.com/Tanosimboangy/WKP9#readme",
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ]
+}
