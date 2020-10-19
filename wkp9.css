@@ -13,23 +13,27 @@ main {
     place-content: center center;
 }
 h1 {
-    font-size: 3rem;
+    text-align: center;
+    font-size: 60px;
     color: rgb(255, 238, 4);
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em;
     text-transform: capitalize;
 }
 h2 {
     margin: 0;
+    font-size: 30px;
 }
-p {
+header p {
     margin: 0;
+    text-align: center;
 }
 .big_container {
     border-radius: 16px;
     padding: 16px 32px;
     background-color: rgb(0, 0, 0);
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
-    max-width: 700px;
+    max-width: 750px;
+    margin: auto;
     margin-top: 2rem;
 }
 ul {
